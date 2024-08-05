@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Frontend Mentor | Contact form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <form action="/" class="m-auto p-3">
+        <h3 class="m-2 title">Contact Us</h3>
+        <div class="inner-form d-flex flex-column p-2">
+          <div class="name-row cell">
+            <div class="row w-100 m-auto g-2">
+              <div class="col-lg-6 fname mb-sm-2 mb-lg-0">
+                <label for="firstName" class="form-label"
+                  >First Name <span class="asterisk">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control shadow-none type"
+                  name="fname"
+                  id="firstName"
+                />
+                <div class="invalid-feedback show">This field is required</div>
+              </div>
+              <div class="col-lg-6 lname">
+                <label for="lastName" class="form-label"
+                  >Last Name<span class="asterisk">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control shadow-none"
+                  name="lname"
+                  id="lastName"
+                />
+                <div class="invalid-feedback">This field is required</div>
+              </div>
+            </div>
+          </div>
+          <div class="email-row cell">
+            <label for="email" class="form-label">
+              Email Address<span class="asterisk">*</span>
+            </label>
+            <input
+              type="text"
+              class="form-control shadow-none"
+              name="email"
+              id="email"
+            />
+            <div class="invalid-feedback empty-field">
+              This field is required
+            </div>
+            <div class="invalid-feedback wrong-format">
+              Please enter a valid email address
+            </div>
+          </div>
+          <div class="query-row cell">
+            <label>Query Type <span class="asterisk">*</span> </label>
+            <div class="row w-100 m-auto g-2">
+              <div class="col-lg-6 inquiry">
+                <div class="input-group">
+                  <span class="input-group-text w-100">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="choice"
+                      id="inquiry"
+                    />
+                    <label for="inquiry" class="form-check-label ms-4"
+                      >General Enquiry</label
+                    >
+                  </span>
+                </div>
+              </div>
+              <div class="col-lg-6 request">
+                <div class="input-group">
+                  <span class="input-group-text w-100">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="choice"
+                      id="request"
+                    />
+                    <label for="request" class="form-check-label ms-4"
+                      >Support Request</label
+                    >
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="invalid-feedback empty-field">
+              Please select a query type
+            </div>
+          </div>
+          <div class="message-row cell">
+            <label for="message">
+              Message <span class="asterisk">*</span></label
+            >
+            <textarea
+              name="message"
+              id="message" rows="6" cols="7"
+              class="form-control shadow-none"
+            ></textarea>
+            <div class="invalid-feedback"> This field is required
+            </div>
+          </div>
+          <div class="condition-row cell">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              name="condition"
+              id="condition"
+            /><span class="ms-3">
+              I consent to being contacted by the team </span
+            >
+            <span class="asterisk">*</span>
+            <div class="invalid-feedback">To submit this form, please consent to being contacted
+            </div>
+          </div>
+          <div class="submit-row cell text-center">
+            <button class="submit-button w-75 p-2 rounded-3" type="button">Submit</button>
+          </div>
+        </div>
+        <div class="toast">
+          <div class="toast-body">
+            <button type="button" class="btn-close" data-bs-dismiss="toast">X</button>
+            <div class="d-flex align-items-center justify-content-start">
+              <span class="check-img"><img src="./assets/images/icon-success-check.svg" alt="check-icon"></span><h4 class="title">Message Sent!</h4>
+            </div>
+            Thanks for completing the form. We'll be in touch soon!
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Contact Us
+
+  First Name
+  This field is required
+
+  Last Name
+  This field is required
+
+  Email Address
+  Please enter a valid email address
+  This field is required
+
+  Query Type
+  General Enquiry
+  Support Request
+  Please select a query type
+
+  Message
+  This field is required
+
+  I consent to being contacted by the team
+  To submit this form, please consent to being contacted
+
+  Submit
+
+  Message Sent!
+  Thanks for completing the form. We'll be in touch soon! -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
